@@ -1,0 +1,515 @@
+/* redes sociais */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.cabecalho-top {
+  width: 100%;
+}
+
+.info {
+  background: #6d221d;
+}
+
+.info a {
+  color: #f26430;
+  transition: color 0.3s ease-in-out;
+}
+
+.info a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+#logo {
+  font-family: "Do Hyeon", sans-serif;
+  color: #fff;
+  width: 240px;
+}
+
+#logo a {
+  text-decoration: none;
+}
+
+/* banner  */
+header {
+  min-height: calc(100vh - 94px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(200, 0, 0, 0.4)), url(../img/video/bnanimacao.gif);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+}
+
+.row-bn {
+  min-height: calc (100vh - 78.4px);
+}
+
+.banner {
+  margin-top: 200px;
+}
+
+.banner h1 {
+  border-top: 6px solid #eba313;
+  border-bottom: 6px solid #eba313;
+  animation: paraDireita;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  margin-top: 80px;
+  font-size: 150px;
+}
+
+@keyframes paraDireita {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(30px);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.banner h1 small {
+  color: #fff;
+  font-family: "Fondamento", cursive;
+}
+
+.banner h1 strong {
+  color: #eba313;
+  font-family: "Fondamento", cursive;
+}
+
+.pedir-btn {
+  color: #fff;
+  background: #6d221d;
+  font-size: 1rem;
+  border: 5px solid #eba313;
+  border-radius: 12px;
+  transition: all 0.5s ease-in-out;
+  padding-top: 1.5px;
+  animation: paraEsquerda;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.pedir-btn:hover {
+  color: #fff;
+  border: 2px solid #be3939;
+}
+
+@keyframes paraEsquerda {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-30px);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.btn-adiante {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  color: #6d221d;
+  background: #f26430;
+  border-radius: 10px;
+  transition-duration: all 0.5 ease;
+  animation: paraBaixo;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.btn-adiante:hover {
+  background: #eba313;
+  color: #6d221d;
+}
+
+@keyframes paraBaixo {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* NAV MENU  */
+.navbar {
+  font-family: "Merienda One", cursive;
+  background: #6d221d;
+  padding: 20px 20px;
+  transition: all 1s ease;
+  height: 90px;
+}
+
+.navbar-background {
+  padding: 5px 20px;
+}
+
+/* Logo da churrascaria */
+.navbar-brand img {
+  height: 100px;
+  transition: all 0.2s ease-in-out;
+  padding-bottom: 12px;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1);
+}
+
+.navbar-brand:hover {
+  color: #f26430;
+}
+
+.nav-link {
+  color: #eba313;
+  text-decoration: none;
+  display: inline;
+  transition: all 1s ease;
+  font-size: 20px;
+  font-family: "Merienda One", cursive;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-btn {
+  background: #eba313;
+  color: #6d221d;
+  border: 2px solid #be3939;
+  font-family: "Merienda One", cursive;
+  font-size: 15px;
+  transition: all 1s ease;
+}
+
+.nav-btn:hover {
+  color: #fff;
+  border-radius: 2px solid #be3939;
+  background: #eba313;
+  transform: rotate(5deg);
+}
+
+.toggler-btn {
+  border: 2px solid #f26430;
+  padding: 5px;
+  transition: all 1s ease;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background: #f26430;
+  transition: all 0.5s ease;
+}
+
+.change .bar1 {
+  transform: rotate(45deg) translate(8px, 5px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-6px, -3px);
+}
+
+/* Imagem  */
+
+body {
+  background: linear-gradient(to right,
+      rgba(59, 13, 13, 0.6),
+      rgba(59, 13, 13, 0.8)),
+    url(../img/bg.jpeg) center/cover fixed no-repeat;
+}
+
+/* Cardápio */
+
+.parent-container {
+  font-family: "Merienda One", cursive;
+}
+
+.container h1 {
+  font-family: "Merienda One", cursive;
+  color: #eba313;
+  font-size: 25px;
+
+}
+
+.container h1 i {
+  color: #fff !important;
+}
+
+.item-container {
+
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+
+}
+
+.item-img {
+  transition: all 2s ease;
+}
+
+.item-container:hover .item-img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.item-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #eba313;
+  border-bottom: 2px solid #eba313;
+  border-top: 2px solid #eba313;
+  transition: all 2s ease;
+  opacity: 0;
+}
+
+.item-container:hover .item-link {
+  opacity: 1;
+}
+
+.item-link:hover {
+  color: #fff;
+  border: 2px solid #eba313;
+  background: transparent;
+}
+
+/* Sobre nós */
+.sobre-conteudo h1 {
+
+  color: #eba313;
+
+}
+
+.sobre-conteudo h2 {
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.fotos-churrascaria {
+
+  transform: rotate(3deg);
+  padding-top: 50px;
+}
+
+/* Equipe */
+.equipe {
+  padding: 30px 0 40px;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.equipe .foto {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.equipe .foto:before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background: #eba313;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+
+}
+
+.equipe:hover .foto:before {
+  height: 100%;
+
+}
+
+.equipe .foto:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #eba313;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+}
+
+.equipe .foto img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+
+}
+
+.equipe:hover .foto img {
+  box-shadow: 0 0 0 14px #fff;
+  transform: scale(0.7);
+}
+
+.equipe .equipe-content {
+  margin-bottom: 30px;
+}
+
+.equipe .titulo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #eba313;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.equipe .funcao {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.equipe .contatos {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #eba313;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.equipe:hover .contatos {
+  bottom: 0;
+}
+
+
+.equipe .contatos li {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 17px;
+  transition: all 0.3s ease 0s;
+
+}
+
+.equipe .contatos li a {
+  color: #6d221d;
+  text-decoration: none;
+}
+
+.equipe .contatos li:hover {
+  background: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.equipe .contatos li a:hover {
+  color: #eba313;
+}
+
+/* Contato  */
+
+.mapa {
+  min-height: 50vh;
+  border-radius: 5px;
+  width: 90%;
+}
+
+#contato .cartao {
+  background: rgba(0, 0, 0, 0.4);
+  transition: all 2s ease;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#contato .cartao:hover {
+  background: rgba(84, 33, 37, 0.4);
+}
+
+#contato .cartao-cabecalho {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+#contato .input-group-text {
+  background: #6d221d;
+  border-color: #eba313;
+  color: #eba313;
+}
+
+#contato .cartao input {
+  color: #6d221d;
+  border: none;
+}
+
+#contato .cartao input::placeholder {
+
+  color: #802e29;
+  font-style: italic;
+}
+
+#contato .cartao textarea::placeholder {
+  color: #802e29;
+  font-style: italic;
+  text-align: center;
+}
+
+.contato-btn {
+  color: #6d221d;
+  background: #fff;
+  border-color: #eba313;
+  transition: all 0.5s ease-in-out;
+}
+
+.contato-btn:hover {
+  background: #eba313;
+  border-color: #6d221d;
+  color: #6d221d;
+}
